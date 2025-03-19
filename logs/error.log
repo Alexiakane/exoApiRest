@@ -1,0 +1,107 @@
+[2025-03-16T22:08:39.687Z] ERROR: Error: Route non trouvée: GET /api/livresse
+    at routes (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/routes/routes.js:47:17)
+    at Server.<anonymous> (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/server.js:24:5)
+[2025-03-16T22:09:10.428Z] ERROR: Error: SQLITE_CONSTRAINT: UNIQUE constraint failed: Livre.ISBN
+--> in Statement#run([ 'Les lames du cardinal', '977767-421-5621238', 2000, 356, 5, 3 ], [Function (anonymous)])
+    at Database.<anonymous> (C:\Users\sadid\OneDrive\Desktop\VsCode\exoApiRest\node_modules\sqlite3\lib\sqlite3.js:76:19)
+    at Database.<anonymous> (C:\Users\sadid\OneDrive\Desktop\VsCode\exoApiRest\node_modules\sqlite3\lib\sqlite3.js:20:19)
+    at file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/repositories/livreRepository.js:15:12
+    at new Promise (<anonymous>)
+    at db_run (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/repositories/livreRepository.js:14:12)
+    at Object.create (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/repositories/livreRepository.js:46:11)
+    at Object.createLivre (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/livreService.js:31:34)
+    at Object.createLivre (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/livreController.js:30:41)
+[2025-03-16T22:09:29.449Z] ERROR: undefined
+[2025-03-16T22:09:29.449Z] ERROR: Error: Le titre est requis
+    at Object.createLivre (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/livreService.js:27:13)
+    at Object.createLivre (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/livreController.js:30:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async routes (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/routes/routes.js:16:5)
+[2025-03-17T14:07:01.734Z] ERROR: ReferenceError: livreRepository is not defined
+    at Object.getAllAuteurs (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/auteurService.js:8:5)
+    at Object.getAllAuteurs (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/auteurController.js:12:43)
+    at routes (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/routes/routes.js:33:22)
+    at Server.<anonymous> (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/server.js:24:5)
+[2025-03-17T19:45:19.129Z] ERROR: ReferenceError: livreRepository is not defined
+    at Object.getAllAuteurs (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/auteurService.js:8:5)
+    at Object.getAllAuteurs (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/auteurController.js:12:43)
+    at routes (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/routes/routes.js:33:22)
+    at Server.<anonymous> (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/server.js:24:5)
+[2025-03-17T19:52:10.492Z] ERROR: ReferenceError: livreRepository is not defined
+    at Object.getAllAuteurs (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/auteurService.js:8:5)
+    at Object.getAllAuteurs (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/auteurController.js:12:43)
+    at routes (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/routes/routes.js:33:22)
+    at Server.<anonymous> (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/server.js:24:5)
+[2025-03-17T19:55:27.103Z] ERROR: Error: SQLITE_ERROR: no such column: E.Retour_Effective
+--> in Database#all('SELECT E.ID_Emprunt, E.Date_Emprunt, E.Date_Retour_Prevue, E.Retour_Effective, E.iD_Membre FROM EMPRUNT E', undefined, [Function (anonymous)])
+    at file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/repositories/empruntRepository.js:6:12
+    at new Promise (<anonymous>)
+    at db_all (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/repositories/empruntRepository.js:5:12)
+    at Object.findAll (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/repositories/empruntRepository.js:27:24)
+    at Object.getAllEmprunts (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/empruntService.js:8:36)
+    at Object.getAllEmprunts (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/empruntController.js:12:45)
+    at routes (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/routes/routes.js:53:23)
+    at Server.<anonymous> (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/server.js:24:5)
+[2025-03-17T19:56:18.895Z] ERROR: ReferenceError: Livre is not defined
+    at file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/repositories/empruntRepository.js:30:34
+    at Array.map (<anonymous>)
+    at Object.findAll (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/repositories/empruntRepository.js:30:23)
+    at async Object.getAllEmprunts (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/empruntService.js:8:12)
+    at async Object.getAllEmprunts (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/empruntController.js:12:24)
+[2025-03-17T20:01:15.917Z] ERROR: Error: L'année de naissance doit être un nombre
+    at Object.createAuteur (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/auteurService.js:25:13)
+    at Object.createAuteur (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/auteurController.js:30:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async routes (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/routes/routes.js:36:5)
+[2025-03-17T20:01:15.917Z] ERROR: Error: L'année de naissance doit être un nombre
+    at Object.createAuteur (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/auteurService.js:23:21)
+    at Object.createAuteur (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/auteurController.js:30:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async routes (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/routes/routes.js:36:5)
+[2025-03-17T20:01:57.409Z] ERROR: Error: L'année de naissance doit être un nombre
+    at Object.createAuteur (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/auteurService.js:23:21)
+    at Object.createAuteur (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/auteurController.js:30:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async routes (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/routes/routes.js:36:5)
+[2025-03-17T20:01:57.410Z] ERROR: Error: L'année de naissance doit être un nombre
+    at Object.createAuteur (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/auteurService.js:25:13)
+    at Object.createAuteur (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/auteurController.js:30:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async routes (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/routes/routes.js:36:5)
+[2025-03-17T22:31:40.875Z] ERROR: ReferenceError: find is not defined
+    at Object.update (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/repositories/auteurRepository.js:73:5)
+    at async Object.updateAuteur (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/auteurService.js:55:12)
+    at async Object.updateAuteur (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/auteurController.js:62:22)
+[2025-03-17T22:33:00.869Z] ERROR: Error: Le nom est requis
+    at Object.updateAuteur (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/auteurService.js:49:21)
+    at Object.updateAuteur (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/auteurController.js:62:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-03-17T22:33:00.870Z] ERROR: Error: Le nom est requis
+    at Object.updateAuteur (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/auteurService.js:51:13)
+    at Object.updateAuteur (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/auteurController.js:62:42)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[2025-03-18T08:21:03.760Z] ERROR: Error: Route non trouvée: POST /auteurs
+    at routes (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/routes/routes.js:73:17)
+    at Server.<anonymous> (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/server.js:24:5)
+[2025-03-18T10:01:41.486Z] ERROR: ReferenceError: id is not defined
+    at Object.findPagination (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/repositories/livreRepository.js:121:38)
+    at Object.getLivresPagination (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/livreService.js:77:34)
+    at Object.getLivresPagination (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/livreController.js:121:51)
+    at routes (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/routes/routes.js:37:27)
+    at Server.<anonymous> (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/server.js:24:5)
+[2025-03-18T10:02:07.234Z] ERROR: ReferenceError: id is not defined
+    at Object.findPagination (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/repositories/livreRepository.js:121:38)
+    at Object.getLivresPagination (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/livreService.js:77:34)
+    at Object.getLivresPagination (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/livreController.js:121:51)
+    at routes (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/routes/routes.js:37:27)
+    at Server.<anonymous> (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/server.js:24:5)
+[2025-03-18T21:09:12.171Z] ERROR: Error: SQLITE_RANGE: column index out of range
+--> in Statement#all(2, [Function: replacement])
+    at Database.<anonymous> (C:\Users\sadid\OneDrive\Desktop\VsCode\exoApiRest\node_modules\sqlite3\lib\sqlite3.js:88:19)
+    at Database.<anonymous> (C:\Users\sadid\OneDrive\Desktop\VsCode\exoApiRest\node_modules\sqlite3\lib\sqlite3.js:20:19)
+    at file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/repositories/livreRepository.js:6:8
+    at new Promise (<anonymous>)
+    at db_all (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/repositories/livreRepository.js:5:10)
+    at Object.find (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/repositories/livreRepository.js:45:24)
+    at Object.getLivreById (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/services/livreService.js:12:34)
+    at Object.getLivreById (file:///C:/Users/sadid/OneDrive/Desktop/VsCode/exoApiRest/controllers/livreController.js:49:40)
