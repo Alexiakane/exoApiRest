@@ -1,4 +1,5 @@
 import { auteurRepository } from '../repositories/auteurRepository.js';
+import { Auteur } from '../models/Auteur.js';
 
 
 test("findAll cherche tous les auteurs", async () => {

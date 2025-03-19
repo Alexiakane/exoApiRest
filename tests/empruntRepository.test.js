@@ -1,8 +1,9 @@
 import { empruntRepository } from '../repositories/empruntRepository.js';
+import { Emprunt } from '../models/Emprunt.js';
 
 
 test("findAll cherche tous les emprunts", async () => {
-    const monEmprunt = {"dateEmprunt": "2024-03-01", "dateRetourPrevue": "2024-03-15", "dateRetourEffective": "NULL", "Id": "1"};
+    const monEmprunt = {"dateEmprunt": "2024-03-01", "dateRetourPrevue": "2024-03-15", "dateRetourEffective": "NULL", "id": 1, "membreId": 1};
     const findAll = await empruntRepository.findAll();
     expect(findAll).toBeDefined();
     expect(findAll).toContainEqual(monEmprunt);
